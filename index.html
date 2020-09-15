@@ -17,13 +17,15 @@
 
 
     <main class="main">
-        <div class="container-lg">
+        <div class="container-lg container">
             <div class="form-notes">
-                <input type="text" name="new-note" id="new-note" placeholder="Add new note">
-                <button type="submit" class="btn btn-secondary add-new-btn" onclick="addNewNote()">Add</button>
-                <button type="submit" class="btn btn-secondary remove-all-btn" onclick="removeAllNotes()">Clear All</button>
+                <input type="text" name="new-note" id="new-note" class="form-control" placeholder="Add new note">
+                <div class="btns">
+                    <button type="submit" class="btn btn-secondary add-new-btn btn-sm" onclick="addNewNote()">Add</button>
+                    <button type="submit" class="btn btn-secondary remove-all-btn btn-sm" onclick="removeAllNotes()">Clear</button>
+                </div>
             </div>
-            <ul id="list"></ul>
+            <ul id="list" class="list-group"></ul>
         </div>
     </main>
     
